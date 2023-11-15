@@ -1,0 +1,360 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    background-color: #ebebeb;
+}
+
+h3 {
+    font-size: 26px;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 3vw;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+div.top-header {
+    padding: 2% 1% 0% 1%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header {
+    background-color: #EAC926;
+}
+
+header div.logo {
+    padding: 10px;
+}
+
+header div.logo,
+header.form {
+    width: 40%;
+}
+
+nav {
+    display: none;
+}
+
+
+header .form .input {
+    background-color: #FFF;
+    border-radius: 3%;
+    color: #666;
+    padding: 6.6px;
+    width: 40vw;
+    height: 5vh;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+header .form {
+    display: flex;
+    align-items: center;
+}
+
+header .form .submit {
+    background-color: #fff;
+    width: 1vw;
+    height: 1vh;
+    border-radius: 10%;
+    color: #666;
+    text-align: center;
+    font-size: 13px;
+    position: relative;
+    right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header div.top-header p {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+div.burger-menu {
+    text-align: center;
+}
+
+div.burger-menu i {
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+}
+
+.container-price {
+
+    display: flex;
+    align-items: center;
+
+}
+
+.price {
+    font-size: 18px;
+    flex-grow: 0.30;
+}
+
+.discount {
+    flex-grow: 0.70;
+}
+
+.discount,
+.description {
+    font-size: 16px;
+}
+
+h3,
+.description {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.main-article .description {
+    display: none;
+    transition: transform 0.3s ease;
+}
+
+.main-article:hover .description {
+    display: block;
+}
+
+section.banner img {
+    width: 100%;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+main div.main-article {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    width: 100%;
+}
+
+main section article {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 15px;
+    margin: 1% 1%;
+}
+
+.product-desc-box {
+    position: relative;
+}
+
+.product-delivery-icon {
+    position: absolute;
+    display: block;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 10px;
+    top: -25px;
+}
+
+.product-delivery-icon {
+    transition: transform 0.3s ease;
+}
+
+.product-desc-box:hover .product-delivery-icon {
+    transform: rotate(-90deg);
+}
+
+main section article img {
+    width: 100%;
+}
+
+main section article i,
+.discount {
+    color: #39b54a;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+}
+
+.main-footer i {
+    font-size: 2em;
+    color: #03264C;
+}
+
+.main-footer section {
+    text-align: center;
+    margin: 10% 0 10% 0;
+    margin-bottom: 10%;
+}
+
+.main-footer section p {
+    padding: 0 10%;
+}
+
+.main-footer h6 {
+    margin: 5%;
+    text-decoration: none;
+
+    color: #666;
+}
+
+
+
+
+/*Definimos los puntos de corte para el diseño responsive*/
+
+/*Tablets*/
+@media only screen and (min-width: 361px) {
+
+    .container-top {
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .description {
+        display: block;
+    }
+
+    header nav {
+        margin: 0% 3%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+    }
+
+    header ul li {
+        font-size: 2vw;
+        padding: 0px 3.5px 8px 3.5px;
+        list-style-type: none;
+    }
+
+    header ul li a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    p {
+        font-size: 2vw;
+    }
+    
+    .burger-menu {
+        display: none;
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+
+    main section article {
+        width: 45%;
+    }
+}
+
+/*Desktop*/
+@media only screen and (min-width: 769px) {
+    div.top-header {
+        padding: 1%;
+        justify-content: start;
+    }
+
+    div.container-top p {
+
+        font-size: 1.1vw;
+        width: 22vw;
+        margin-left: 10px
+    }
+
+    header div.logo {
+        width: 20vw;
+        margin-right: 50px;
+
+    }
+
+    header ul li {
+        font-size: 1.1vw;
+        padding: 0px 10px 8px 10px;
+        list-style-type: none;
+    }
+
+    header .form .submit {
+        background-color: #fff;
+        border: 1px solid #000;
+        border-radius: 8%;
+        color: black;
+        width: 1.5vw;
+        height: 3vh;
+        margin-left: 20px;
+    }
+
+    header .form .input {
+        background-color: #FFF;
+        border: 1px solid #000;
+        color: #666;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+        width: 30vw;
+        height: 3vh;
+        font-size: 110%;
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    h3 {
+        margin-top: 20px;
+        font-size: 26px;
+    }
+
+    .main-footer {
+
+        display: flex;
+        padding: 0% 10%;
+    }
+
+    footer i:hover {
+        color: #EAC926;
+    }
+
+    h6 {
+        font-weight: 400;
+        font-size: 0.8rem;
+        margin-bottom: 50px;
+        margin-left: 50px;
+        color: #666;
+    }
+
+
+}

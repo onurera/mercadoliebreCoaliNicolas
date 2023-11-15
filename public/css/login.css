@@ -1,0 +1,45 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    background-color: #ebebeb;
+}
+
+#loginForm {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+input {    
+    margin: 10px 0px;
+    height: 6vh;
+    border: none;
+    padding: 2%;
+    border-radius: 2%;
+
+}
+
+.enviar{
+    background-color: rgb(91, 91, 255);
+    color: #fff;
+    margin: 10px 0px;
+    height: 6vh;
+    border: none;
+    padding: 2%;
+    border-radius: 2%;
+    text-align: center;
+    font-size: 1rem;
+}
