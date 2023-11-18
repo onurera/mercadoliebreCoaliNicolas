@@ -63,16 +63,16 @@
     </header>
     <form  id="registerForm" action="/" method="GET">
         <label for="nombre"></label>
-        <input type="text" name="nombre" placeholder="Nombre y Apellido">
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido">
 
-        <input type="text" name="usuario" placeholder="Nombre de usuario">
+        <input type="text" id="usuario" name="usuario" placeholder="Nombre de usuario">
 
-        <input type="email" name="email" placeholder="Email">
+        <input type="email" id="email" name="email" placeholder="Email">
 
         <h3>Fecha de Nacimiento</h3>
-        <input type="date" name="fecha" placeholder="mm/dd/yyyy">
+        <input type="date" id="fechaNac" name="fecha" placeholder="mm/dd/yyyy">
 
-        <input type="text" name="domicilio" placeholder="Domicilio">
+        <input type="text" id="domicilio" name="domicilio" placeholder="Domicilio">
 
         <h3>Perfil de usuario</h3>
         <div class="radioButton">
@@ -82,11 +82,11 @@
 
         <h3>Intereses</h3>
         <div class="checkbox">
-            <input type="checkbox" name="intereses">Electro
-            <input type="checkbox" name="intereses">Moda
-            <input type="checkbox" name="intereses">Hogar
-            <input type="checkbox" name="intereses">Jugueteria
-            <input type="checkbox" name="intereses">Vida Sana
+            <div class="option"><input type="checkbox" name="intereses">Electro</div>
+            <div class="option"><input type="checkbox" name="intereses">Hogar</div>
+            <div class="option"><input type="checkbox" name="intereses">Jugueteria</div>
+            <div class="option"><input type="checkbox" name="intereses">Vida Sana</div>
+            <div class="option"><input type="checkbox" name="intereses">Moda</div>
         </div>
 
         
@@ -98,10 +98,10 @@
 
         <label for="confirmarContrasena">Confirmar Contraseña:</label>
         <input type="password" id="confirmarContrasena" name="confirmarContrasena">
-
+        <div class="enviar-borrar">
         <button class="enviar" type="submit">Enviar</button>
         <button class="borrar "type="reset">Borrar</button>
-
+        </div>
     </form>
 
 

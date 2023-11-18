@@ -10,12 +10,12 @@ body {
 }
 
 h3 {
-    font-size: 26px;
+    font-size: 1em;
     margin-top: 20px;
 }
 
 p {
-    font-size: 3vw;
+    font-size: 1em;
     text-align: center;
     margin-bottom: 3%;
 }
@@ -50,7 +50,6 @@ header .form .input {
     color: #666;
     padding: 6.6px;
     width: 40vw;
-    height: 5vh;
     font-size: 0.8rem;
     display: flex;
     align-items: center;
@@ -190,13 +189,15 @@ main section article i,
 footer {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     background-color: #fff;
+    padding: 0% 8%;
 }
 
 .main-footer i {
     font-size: 2em;
     color: #03264C;
+    margin-bottom: 10px;
 }
 
 .main-footer section {
@@ -258,10 +259,6 @@ footer {
         text-decoration: none;
         color: #000;
     }
-
-    p {
-        font-size: 2vw;
-    }
     
     .burger-menu {
         display: none;
@@ -311,8 +308,9 @@ footer {
         border: 1px solid #000;
         border-radius: 8%;
         color: black;
-        width: 1.5vw;
-        height: 3vh;
+        width: 2.3em;
+        height: 2.3em;
+        font-size: 1rem;
         margin-left: 20px;
     }
 
@@ -324,7 +322,6 @@ footer {
         display: flex;
         align-items: center;
         width: 30vw;
-        height: 3vh;
         font-size: 110%;
     }
 
@@ -333,15 +330,9 @@ footer {
         flex-wrap: nowrap;
     }
 
-    h3 {
-        margin-top: 20px;
-        font-size: 26px;
-    }
 
     .main-footer {
-
         display: flex;
-        padding: 0% 10%;
     }
 
     footer i:hover {
