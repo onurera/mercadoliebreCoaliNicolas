@@ -1,13 +1,14 @@
 {
-  "name": "clase17",
+  "name": "mercadoliebrecoalinicolas",
   "version": "1.0.0",
-  "description":" ",
+  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "nodemon app.js",
     "start": "node app.js"
   },
-  "author": "Gomez Mariana",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.3.1",
